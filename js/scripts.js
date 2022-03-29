@@ -40,4 +40,19 @@ $(document).ready(function(){
     $("#total-count").html(wordCount);
     $("#selected-count").html(occurrencesOfWord);
   });
+  function boldPassage(word, text) {
+    let htmlString = "<p>";
+    let textArray = text.split(" ");
+    textArray.forEach(function(element, index) {
+      if (word === element) {
+        htmlString = htmlString.concat("<b>" + element + "</b>");
+      } else {
+        htmlString = htmlString.concat(element);
+      }
+      if (index !== (textArray.length - 1)) {
+        htmlString = htmlString.concat(" ");
+      }
+    });
+    return htmlString + "</p>"
+  } 
 });
