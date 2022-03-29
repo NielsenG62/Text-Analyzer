@@ -1,3 +1,4 @@
+```javascript
 Describe: wordCounter()
 
 Test: "It should return 1 if a passage has just one word."
@@ -94,3 +95,4 @@ const word = "hello";
 const text = "hello there";
 boldPassage(word, text);
 Expected Output: "<p><b>hello</b> there</p>"
+```
